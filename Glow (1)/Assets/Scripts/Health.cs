@@ -43,11 +43,6 @@ public class Health : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag == "Enemy")
-        {
-            health -= 1;
-            Debug.Log("Link Is Hit!");
-        }
         if(collision.collider.tag == "Bullet")
         {
             health -= 1;
