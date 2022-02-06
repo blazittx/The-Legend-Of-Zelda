@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class collide : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    private void Start()
     {
-        if (collision.gameObject.name == "Player")
-        {
-            Debug.Log("Player Hit");
-            Destroy(gameObject);
-        }
+        Destroy(gameObject, 4);
     }
 }

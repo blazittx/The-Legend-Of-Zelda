@@ -6,6 +6,10 @@ using UnityEngine.UI;
 public class Health : MonoBehaviour
 {
     public int health;
+    public bool isPlayer;
+    public int score = 0;
+    ScoreKeeper scoreKeeper;
+    LevelManager levelManager;
     public int numOfHearts;
 
     public Image[] hearts;
@@ -40,6 +44,11 @@ public class Health : MonoBehaviour
             }
         }
     }
+    private void Awake()
+    {
+        scoreKeeper = FindObjectOfType<ScoreKeeper>();
+        levelManager = FindObjectOfType<LevelManager>();
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -49,6 +58,19 @@ public class Health : MonoBehaviour
             FMODUnity.RuntimeManager.PlayOneShot("event:/link_got_hit");
             Debug.Log("Link Is Hit!");
         }
+        if(health <= 0)
+        {
+            Die();
+        }
+    }
+    private void Die()
+    {
+        if (isPlayer)
+        {
+            levelManager.LoadGameOver();
+        }
+        
+        Destroy(gameObject);
     }
 
 }

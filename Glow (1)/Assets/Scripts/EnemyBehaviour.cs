@@ -10,6 +10,12 @@ public class EnemyBehaviour : MonoBehaviour
 
     public int maxHealth = 100;
     public int currentHealth;
+    public int score ;
+    ScoreKeeper scoreKeeper;
+    private void Awake()
+    {
+        scoreKeeper = FindObjectOfType<ScoreKeeper>();
+    }
 
     void Start()
     {
@@ -41,6 +47,7 @@ public class EnemyBehaviour : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
+            scoreKeeper.ModifyScore(score);
         }
         else
         {
