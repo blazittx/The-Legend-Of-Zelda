@@ -812,6 +812,7 @@ MonoBehaviour:
   hitParticles: {fileID: 5611026814887952561, guid: 712eb95b4a5bbfe4ca25d793cea027f5, type: 3}
   maxHealth: 100
   currentHealth: 0
+  score: 50
 --- !u!195 &129432107
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1256,6 +1257,7 @@ MonoBehaviour:
   hitParticles: {fileID: 5611026814887952561, guid: 712eb95b4a5bbfe4ca25d793cea027f5, type: 3}
   maxHealth: 100
   currentHealth: 0
+  score: 50
 --- !u!114 &174600210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3170,6 +3172,7 @@ MonoBehaviour:
   hitParticles: {fileID: 5611026814887952561, guid: 712eb95b4a5bbfe4ca25d793cea027f5, type: 3}
   maxHealth: 100
   currentHealth: 0
+  score: 50
 --- !u!114 &433485324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3409,6 +3412,10 @@ PrefabInstance:
     - target: {fileID: 1103996959519751177, guid: d84c69c56d9021043aee83ffeae06218, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103996959519751178, guid: d84c69c56d9021043aee83ffeae06218, type: 3}
+      propertyPath: sceneLoadDelay
+      value: 10.77
       objectReference: {fileID: 0}
     - target: {fileID: 1103996959519751179, guid: d84c69c56d9021043aee83ffeae06218, type: 3}
       propertyPath: m_Name
@@ -7945,6 +7952,7 @@ MonoBehaviour:
   hitParticles: {fileID: 5611026814887952561, guid: 712eb95b4a5bbfe4ca25d793cea027f5, type: 3}
   maxHealth: 100
   currentHealth: 0
+  score: 50
 --- !u!114 &1188840953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10534,6 +10542,7 @@ MonoBehaviour:
   hitParticles: {fileID: 5611026814887952561, guid: 712eb95b4a5bbfe4ca25d793cea027f5, type: 3}
   maxHealth: 100
   currentHealth: 0
+  score: 50
 --- !u!114 &1565438422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12461,6 +12470,7 @@ MonoBehaviour:
   hitParticles: {fileID: 5611026814887952561, guid: 712eb95b4a5bbfe4ca25d793cea027f5, type: 3}
   maxHealth: 100
   currentHealth: 0
+  score: 50
 --- !u!114 &1774188837
 MonoBehaviour:
   m_ObjectHideFlags: 0

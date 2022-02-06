@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
+    Animator animator;
+    
     public int health;
     public bool isPlayer;
     public int score = 0;
@@ -48,6 +50,7 @@ public class Health : MonoBehaviour
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
         levelManager = FindObjectOfType<LevelManager>();
+        animator = GetComponent<Animator>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -68,9 +71,10 @@ public class Health : MonoBehaviour
         if (isPlayer)
         {
             levelManager.LoadGameOver();
+            animator.SetTrigger("isDead");
         }
         
-        Destroy(gameObject);
+        Destroy(gameObject, 5);
     }
 
 }

@@ -3945,6 +3945,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1103996959519751178, guid: d84c69c56d9021043aee83ffeae06218, type: 3}
+      propertyPath: sceneLoadDelay
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1103996959519751179, guid: d84c69c56d9021043aee83ffeae06218, type: 3}
       propertyPath: m_Name
       value: LevelManager
