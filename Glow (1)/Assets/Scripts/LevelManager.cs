@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] float sceneLoadDelay = 1f;
+    [SerializeField] float doorLoadDelay = 20f;
     ScoreKeeper scoreKeeper;
     private void Awake()
     {
@@ -14,11 +15,11 @@ public class LevelManager : MonoBehaviour
     public void LoadGame()
     {
         //scoreKeeper.ResetScore();
-        SceneManager.LoadScene("LvlBox1.0");
+        SceneManager.LoadScene(1);
     }
     public void LoadMainMenu()
     {
-        SceneManager.LoadScene("gameStart");
+        SceneManager.LoadScene(0);
     }
     public void LoadGameOver()
     {
@@ -32,6 +33,7 @@ public class LevelManager : MonoBehaviour
     {
         yield return new WaitForSeconds(sceneLoadDelay);
         SceneManager.LoadScene(sceneName);
-
     }
+    
+
 }

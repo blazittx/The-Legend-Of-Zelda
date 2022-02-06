@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBehaviour : MonoBehaviour
+public class BossBehaviour : MonoBehaviour
 {
     [Header("Unity Setup")]
     public ParticleSystem deathParticles;
@@ -10,7 +10,7 @@ public class EnemyBehaviour : MonoBehaviour
     public string Event;
     public int maxHealth = 100;
     public int currentHealth;
-    public int score ;
+    public int score;
     ScoreKeeper scoreKeeper;
     private void Awake()
     {
@@ -41,7 +41,7 @@ public class EnemyBehaviour : MonoBehaviour
     {
         Debug.Log("Link Hits");
         currentHealth -= damage;
-        FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyHitSound");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/boss_got_hit");
         // hurt animation
 
         if (currentHealth <= 0)

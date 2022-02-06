@@ -52,7 +52,16 @@ public class Health : MonoBehaviour
         levelManager = FindObjectOfType<LevelManager>();
         animator = GetComponent<Animator>();
     }
-
+    public void PlayerTakeDamage()
+    {
+        health -= 1;
+        FMODUnity.RuntimeManager.PlayOneShot("event:/link_got_hit");
+        Debug.Log("Link Is Hit!");
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.collider.tag == "Bullet")
@@ -61,7 +70,13 @@ public class Health : MonoBehaviour
             FMODUnity.RuntimeManager.PlayOneShot("event:/link_got_hit");
             Debug.Log("Link Is Hit!");
         }
-        if(health <= 0)
+        if (collision.collider.tag == "Box")
+        {
+            health -= 1;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/link_got_hit");
+            Debug.Log("Link Is Hit!");
+        }
+        if (health <= 0)
         {
             Die();
         }
@@ -70,8 +85,8 @@ public class Health : MonoBehaviour
     {
         if (isPlayer)
         {
-            levelManager.LoadGameOver();
             animator.SetTrigger("isDead");
+            levelManager.LoadGameOver();
         }
         
         Destroy(gameObject, 5);

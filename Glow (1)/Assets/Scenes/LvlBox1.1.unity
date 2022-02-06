@@ -810,6 +810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathParticles: {fileID: 8327344765524526938, guid: e57a4e803cc984448bd3b75acea187b8, type: 3}
   hitParticles: {fileID: 5611026814887952561, guid: 712eb95b4a5bbfe4ca25d793cea027f5, type: 3}
+  Event: event:/Ocktrock_Die
   maxHealth: 100
   currentHealth: 0
   score: 50
@@ -921,15 +922,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 129432105}
   m_LocalRotation: {x: -0, y: -0.97727513, z: -0, w: 0.21197492}
-  m_LocalPosition: {x: 4.228, y: -12.517, z: 4.891}
-  m_LocalScale: {x: 0.66736144, y: 0.66736144, z: 0.66736144}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6673614, y: 0.66736144, z: 0.6673614}
   m_Children:
   - {fileID: 835037544}
   - {fileID: 1900547285}
   - {fileID: 342530957}
   - {fileID: 1521370369}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1395386397}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -155.524, z: 0}
 --- !u!1 &131467362
 GameObject:
@@ -1255,6 +1256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathParticles: {fileID: 8327344765524526938, guid: e57a4e803cc984448bd3b75acea187b8, type: 3}
   hitParticles: {fileID: 5611026814887952561, guid: 712eb95b4a5bbfe4ca25d793cea027f5, type: 3}
+  Event: event:/Ocktrock_Die
   maxHealth: 100
   currentHealth: 0
   score: 50
@@ -1344,15 +1346,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174600207}
   m_LocalRotation: {x: -0, y: -0.8542119, z: -0, w: -0.519925}
-  m_LocalPosition: {x: -1.49, y: -12.528, z: 4.25}
-  m_LocalScale: {x: 0.66736144, y: 0.66736144, z: 0.66736144}
+  m_LocalPosition: {x: -5.7180004, y: -0.01099968, z: -0.6409998}
+  m_LocalScale: {x: 0.6673615, y: 0.66736144, z: 0.6673615}
   m_Children:
   - {fileID: 1909846068}
   - {fileID: 1757613155}
   - {fileID: 905378856}
   - {fileID: 393845058}
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_Father: {fileID: 1395386397}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -242.65399, z: 0}
 --- !u!1 &175645448
 GameObject:
@@ -2107,6 +2109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 935948083b7dfad48a7828472420ebac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Level: 1
 --- !u!65 &327446069
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3170,6 +3173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathParticles: {fileID: 8327344765524526938, guid: e57a4e803cc984448bd3b75acea187b8, type: 3}
   hitParticles: {fileID: 5611026814887952561, guid: 712eb95b4a5bbfe4ca25d793cea027f5, type: 3}
+  Event: event:/Ocktrock_Die
   maxHealth: 100
   currentHealth: 0
   score: 50
@@ -3259,15 +3263,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433485321}
   m_LocalRotation: {x: -0, y: -0.8542119, z: -0, w: -0.519925}
-  m_LocalPosition: {x: -9.236, y: -12.528, z: 0.362}
-  m_LocalScale: {x: 0.66736144, y: 0.66736144, z: 0.66736144}
+  m_LocalPosition: {x: -13.464001, y: -0.01099968, z: -4.529}
+  m_LocalScale: {x: 0.6673615, y: 0.66736144, z: 0.6673615}
   m_Children:
   - {fileID: 1909495865}
   - {fileID: 1749051006}
   - {fileID: 1694405621}
   - {fileID: 1556852641}
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 1395386397}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -242.65399, z: 0}
 --- !u!1 &437270211
 GameObject:
@@ -3371,7 +3375,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1103996959519751177, guid: d84c69c56d9021043aee83ffeae06218, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1103996959519751177, guid: d84c69c56d9021043aee83ffeae06218, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3628,7 +3632,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 211699848771003648, guid: 53c491bc329498442bad214b08f2af45, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 211699848771003648, guid: 53c491bc329498442bad214b08f2af45, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4118,7 +4122,7 @@ RectTransform:
   - {fileID: 1358324508}
   - {fileID: 1491371597}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5444,6 +5448,164 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769314150}
   m_Mesh: {fileID: 7567532504055388576, guid: 7386f1579f9e6d446b8f087d9d2cf868, type: 3}
+--- !u!1001 &779325438
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1679171851682690160, guid: 2dd0c4fee05760543b53208842b5854c, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356157464642609262, guid: 2dd0c4fee05760543b53208842b5854c, type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356157464642609262, guid: 2dd0c4fee05760543b53208842b5854c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -24.1445
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356157464642609262, guid: 2dd0c4fee05760543b53208842b5854c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.2368073
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356157464642609262, guid: 2dd0c4fee05760543b53208842b5854c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.856737
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356157464642609262, guid: 2dd0c4fee05760543b53208842b5854c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356157464642609262, guid: 2dd0c4fee05760543b53208842b5854c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356157464642609262, guid: 2dd0c4fee05760543b53208842b5854c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356157464642609262, guid: 2dd0c4fee05760543b53208842b5854c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356157464642609262, guid: 2dd0c4fee05760543b53208842b5854c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356157464642609262, guid: 2dd0c4fee05760543b53208842b5854c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356157464642609262, guid: 2dd0c4fee05760543b53208842b5854c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2dd0c4fee05760543b53208842b5854c, type: 3}
+--- !u!1 &779325439 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1679171851682690160, guid: 2dd0c4fee05760543b53208842b5854c, type: 3}
+  m_PrefabInstance: {fileID: 779325438}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &779325440
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779325439}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4e755df5db5039d4ebbb1045d72696d6, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &783781135
 GameObject:
   m_ObjectHideFlags: 0
@@ -7950,6 +8112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathParticles: {fileID: 8327344765524526938, guid: e57a4e803cc984448bd3b75acea187b8, type: 3}
   hitParticles: {fileID: 5611026814887952561, guid: 712eb95b4a5bbfe4ca25d793cea027f5, type: 3}
+  Event: event:/Ocktrock_Die
   maxHealth: 100
   currentHealth: 0
   score: 50
@@ -8039,15 +8202,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1188840950}
   m_LocalRotation: {x: -0, y: -0.8542119, z: -0, w: -0.519925}
-  m_LocalPosition: {x: -14.38, y: -12.528, z: -0.76}
-  m_LocalScale: {x: 0.66736144, y: 0.66736144, z: 0.66736144}
+  m_LocalPosition: {x: -18.608, y: -0.01099968, z: -5.651}
+  m_LocalScale: {x: 0.6673615, y: 0.66736144, z: 0.6673615}
   m_Children:
   - {fileID: 1187895241}
   - {fileID: 803491207}
   - {fileID: 1424225043}
   - {fileID: 134265727}
-  m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_Father: {fileID: 1395386397}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -242.65399, z: 0}
 --- !u!1 &1209909389
 GameObject:
@@ -9352,6 +9515,42 @@ Transform:
   m_Father: {fileID: 1609767966}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1395386396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1395386397}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1395386397
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395386396}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.228, y: -12.517, z: 4.891}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 129432112}
+  - {fileID: 433485328}
+  - {fileID: 1565438426}
+  - {fileID: 1774188841}
+  - {fileID: 174600214}
+  - {fileID: 1188840957}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1397284704
 GameObject:
   m_ObjectHideFlags: 0
@@ -10540,6 +10739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathParticles: {fileID: 8327344765524526938, guid: e57a4e803cc984448bd3b75acea187b8, type: 3}
   hitParticles: {fileID: 5611026814887952561, guid: 712eb95b4a5bbfe4ca25d793cea027f5, type: 3}
+  Event: event:/Ocktrock_Die
   maxHealth: 100
   currentHealth: 0
   score: 50
@@ -10629,15 +10829,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565438419}
   m_LocalRotation: {x: -0, y: -0.8542119, z: -0, w: -0.519925}
-  m_LocalPosition: {x: -6.38, y: -12.528, z: 16.16}
-  m_LocalScale: {x: 0.66736144, y: 0.66736144, z: 0.66736144}
+  m_LocalPosition: {x: -10.608, y: -0.01099968, z: 11.269}
+  m_LocalScale: {x: 0.6673615, y: 0.66736144, z: 0.6673615}
   m_Children:
   - {fileID: 2046041480}
   - {fileID: 1850391597}
   - {fileID: 590542720}
   - {fileID: 1074789831}
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_Father: {fileID: 1395386397}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -242.65399, z: 0}
 --- !u!1 &1565843027
 GameObject:
@@ -12468,6 +12668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathParticles: {fileID: 8327344765524526938, guid: e57a4e803cc984448bd3b75acea187b8, type: 3}
   hitParticles: {fileID: 5611026814887952561, guid: 712eb95b4a5bbfe4ca25d793cea027f5, type: 3}
+  Event: event:/Ocktrock_Die
   maxHealth: 100
   currentHealth: 0
   score: 50
@@ -12557,15 +12758,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774188834}
   m_LocalRotation: {x: -0, y: -0.8542119, z: -0, w: -0.519925}
-  m_LocalPosition: {x: -10.85, y: -12.528, z: 11.76}
-  m_LocalScale: {x: 0.66736144, y: 0.66736144, z: 0.66736144}
+  m_LocalPosition: {x: -15.078001, y: -0.01099968, z: 6.8690004}
+  m_LocalScale: {x: 0.6673615, y: 0.66736144, z: 0.6673615}
   m_Children:
   - {fileID: 553617152}
   - {fileID: 1986008206}
   - {fileID: 1596600763}
   - {fileID: 720711722}
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_Father: {fileID: 1395386397}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -242.65399, z: 0}
 --- !u!1 &1780510097
 GameObject:

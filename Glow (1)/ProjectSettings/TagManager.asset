@@ -12,6 +12,7 @@ TagManager:
   - Sword
   - Ground
   - Bullet
+  - Box
   layers:
   - Default
   - TransparentFX
